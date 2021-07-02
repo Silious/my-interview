@@ -1,4 +1,3 @@
-# 面试题汇总
 #### JS
 
 1. 数组的扁平化
@@ -37,43 +36,47 @@
 
 10. 事件委托
 
-11. 数组遍历的方式   findIndex找不到返回-1    find  找不到返回undefined 
+11. 进程和线程的区别
 
-12. 实现一个深拷贝  JSON.parse的缺点
+12. 数组遍历的方式   findIndex找不到返回-1    find  找不到返回undefined 
 
-13. foreach和map的区别  返回值?
+13. 实现一个深拷贝  JSON.parse的缺点 怎么处理深拷贝的循环引用问题
 
-14. 箭头函数和bind(this)的区别,哪个性能好?为什么
+14. foreach和map的区别  返回值?
 
-15. 数组哪些循环是可以中断的
+15. 箭头函数和bind(this)的区别,哪个性能好?为什么
 
-16. 数组去重  除了new set ,遍历还有什么其他方式
+16. this绑定方式,区别?
+
+17. 数组哪些循环是可以中断的
+
+18. 数组去重  除了new set ,遍历还有什么其他方式
 
     https://mp.weixin.qq.com/s/4cWE55z950f2_cpcrTL9eg
 
-17. new Set()转数组有哪些方式
+19. new Set()转数组有哪些方式
 
     https://blog.csdn.net/qq_41813695/article/details/84582766
 
-18. 深浅拷贝分别怎么实现   浅拷贝除了扩展运算符还有其他什么方式   JSON.parse(JSON.stringify())对函数,日期等类型的处理结果  undefined还是会忽略掉?
+20. 深浅拷贝分别怎么实现   浅拷贝除了扩展运算符还有其他什么方式   JSON.parse(JSON.stringify())对函数,日期等类型的处理结果  undefined还是会忽略掉?
 
     https://muyiy.cn/blog/4/4.1.html
 
     忽略
 
-19. setTimeout 0为什么会有延迟
+21. setTimeout 0为什么会有延迟
 
     宏任务   https://www.webhek.com/post/settimeout-sleep-0-second.html
 
-20. 声明一个对象时,怎么让它的某个属性为只读 object.defineProperty
+22. 声明一个对象时,怎么让它的某个属性为只读 object.defineProperty
 
-21. const  let  var的区别
+23. const  let  var的区别
 
-22. 怎么解决js大数字精度丢失问题
+24. 怎么解决js大数字精度丢失问题
 
     https://blog.csdn.net/qq_35271556/article/details/80137474
 
-23. js大数相加怎么实现
+25. js大数相加怎么实现
 
     https://blog.csdn.net/weixin_45727472/article/details/117305306
 
@@ -81,93 +84,127 @@
 
     
 
-24. 讲下事件冒泡
+26. 讲下事件冒泡
 
-25. 实现缓存函数memorize
+27. 实现缓存函数memorize
 
     https://segmentfault.com/a/1190000012505900
 
-26. 说说函数柯里化
+28. 说说函数柯里化
 
-27. 拷贝数组有哪些方式
+29. 拷贝数组有哪些方式
 
-28. JSON.parse JSON.stringify的缺陷
+30. JSON.parse JSON.stringify的缺陷
 
-29. 实现Promise.all
+31. 实现Promise.all
 
     https://juejin.cn/post/6844904064820461576
 
-30. Promise.all 遇到异常最后返回结果是什么
+32. Promise.all 遇到异常最后返回结果是什么
 
     https://blog.csdn.net/Elanenrich123/article/details/88410933
 
-31. Promise有几种状态
+33. Promise有几种状态
 
-32. Map,Set了解么,怎么用
+34. Map,Set了解么,怎么用
 
-33. 箭头函数和普通函数的区别
+35. 箭头函数和普通函数的区别
 
-34. forEach map的区别
+36. forEach map的区别
 
-35. 说说Promise.all   race  allsettled   怎么捕获异常
+37. 说说Promise.all   race  allsettled   怎么捕获异常
 
-36. 说说aysc  await
+38. 实现promise,then,catch
 
-37. 怎么实现深拷贝
+39. 说说aysc  await
 
-38. 说说eventLoop    宏任务和微任务的区别
+40. 怎么实现深拷贝
+
+41. 说说eventLoop    宏任务和微任务的区别
 
     https://mp.weixin.qq.com/s/qhkQtRFmgfc7Mx0e1nROcw
 
-39. setTimeout和Promise的执行优先级
+42. setTimeout和Promise的执行优先级
 
-40. 说说CMD和AMD
+43. 说说CMD和AMD
 
-41. compose了解么
+44. compose了解么
 
     https://blog.csdn.net/zxl1990_ok/article/details/90049466
 
-42. 为什么js中函数是一等公民
+45. 为什么js中函数是一等公民
 
     https://www.cnblogs.com/fundebug/p/javascript-first-class-function.html
 
     https://www.cnblogs.com/xiaoxiaokun/p/7090902.html
 
-43. 数组打断顺序  去重  扁平化,  不清楚数组层级时用flat去重传什么参数
+46. 数组打断顺序  去重  扁平化,  不清楚数组层级时用flat去重传什么参数
 
-44. 说说模块化的历史
+47. 说说模块化的历史
 
-45. 执行多个promise,按顺序输出对应的结果
+48. 执行多个promise,按顺序输出对应的结果
 
-46. this绑定有哪些
+49. this绑定有哪些
 
     https://muyiy.cn/blog/3/3.1.html
 
-47. 实时显示日期时间并格式化
+50. 实时显示日期时间并格式化
 
-48. 有一个li列表,实现点击打印出当前点击的li序号
+51. 有一个li列表,实现点击打印出当前点击的li序号
 
-49. 深浅拷贝的特点
+52. 深浅拷贝的特点
 
-50. 项目中用到哪些设计模式   观察者模式和发布订阅模式的区别
+53. 项目中用到哪些设计模式   观察者模式和发布订阅模式的区别
 
     https://juejin.cn/post/6844904032826294286#heading-76
 
     https://zhuanlan.zhihu.com/p/51357583
 
-51. 正则:去掉字符串的前后空格     匹配千分位
+54. 正则:去掉字符串的前后空格     匹配千分位
 
     https://tool.oschina.net/uploads/apidocs/jquery/regexp.html
 
-52. trim的作用
+55. trim的作用
 
-53. 分片上传,断点续传怎么做的
+56. 分片上传,断点续传怎么做的
 
     https://juejin.cn/post/6844903860327186445#heading-8
 
-54. class继承的原理
+57. class继承的原理
 
     https://www.cnblogs.com/memphis-f/p/12029574.html
+
+58. 为什么会有暂时性死区
+
+59. 实现防抖函数
+
+60. 函数预加载了解么
+
+61. 一个函数直接return this和return一个对象的区别
+
+62. 怎么创建公有属性,私有属性
+
+63. es5和es6的作用域有什么区别
+
+64. 类的构造函数的作用
+
+65. 怎么获取Array.prototype上的方法集合
+
+66. 数组有哪些方法,怎么往数组头部插入一个元素
+
+67. 怎么实现promise.allsettled
+
+68. 什么对象没有prototype属性
+
+69. async await怎么捕获异常
+
+70. 实现recude,map
+
+71. 怎么实现axios的接口超时   用promise.race实现
+
+72. 正则匹配url中的参数(手写题)
+
+73. 怎么实现lodash的分组方法
 
 #### CSS
 
@@ -222,6 +259,34 @@
 15. less里边mixin和function的用法,区别
 
     https://blog.csdn.net/weixin_34146986/article/details/91430581
+    
+16. z-index高的元素反而显示在底下,可能是什么原因
+
+17. css层叠上下文了解么
+
+18. 除了BFC之外,还有哪些布局
+
+19. css盒模型
+
+20. margin-top和tranform:tranlate的区别
+
+21. 绝对定位不设置top等属性是什么效果
+
+22. transform位移和position定位位置有什么区别,性能差异表现在哪里,为什么
+
+23. 实现位移动画有哪些方式,css,js
+
+24. Css硬件加速有哪些属性
+
+25. 行内块级元素有哪些
+
+26. css,多行超出显示点点点
+
+27. css动画有哪些
+
+28. rem和em的区别
+
+    
 
 #### REACT
 
@@ -243,21 +308,35 @@
 
 5. 用的react版本
 
-6. useRef用过么，useCallback有什么用，原理分别是什么，有什么区别
+6. react18有哪些新特性
 
-7. react的数据绑定怎么实现的
+7. react17和16的区别
 
-   https://www.cnblogs.com/wzy0526/p/9361228.html
+8. react和vue的区别,为什么选react
 
-    https://blog.csdn.net/csdnzlcheng/article/details/102373133
+9. useRef用过么，useCallback有什么用，原理分别是什么，有什么区别
 
-8. 怎么处理浅比较导致不渲染的问题
+10. react中key的作用,不写会怎样
 
-9. setState什么时候异步 什么时候同步
+11. react的数据绑定怎么实现的
 
-   https://kaiwu.lagou.com/course/courseInfo.htm?courseId=566#/detail/pc?id=5796
+    https://www.cnblogs.com/wzy0526/p/9361228.html
 
-10. 说下虚拟dom
+     https://blog.csdn.net/csdnzlcheng/article/details/102373133
+
+12. 怎么处理浅比较导致不渲染的问题
+
+13. Fiber的中断更新机制具体在什么场景下有用到
+
+    https://blog.csdn.net/qq_41903941/article/details/115216864
+
+14. 高阶组件的实现方式
+
+15. setState什么时候异步 什么时候同步
+
+    https://kaiwu.lagou.com/course/courseInfo.htm?courseId=566#/detail/pc?id=5796
+
+16. 说下虚拟dom
 
     https://kaiwu.lagou.com/course/courseInfo.htm?courseId=566#/detail/pc?id=5799
 
@@ -265,81 +344,83 @@
 
     https://mp.weixin.qq.com/s/_jAW4Z3VR-uW0AEnjHgAEw
 
-11. 什么时候会触发组件重新render ?  State  props   context  forceupdate
+17. 什么时候会触发组件重新render ?  State  props   context  forceupdate
 
     https://blog.csdn.net/qq_36461153/article/details/106566369
 
     https://cloud.tencent.com/developer/article/1549644
 
-12. react组件怎么减少重复渲染
+18. react组件怎么减少重复渲染
 
     https://kaiwu.lagou.com/course/courseInfo.htm?courseId=566#/detail/pc?id=5804
 
-13. react自带高阶组件有哪些
+19. react自带高阶组件有哪些
 
     https://github.com/LinDaiDai/niubility-coding-js/blob/master/%E6%A1%86%E6%9E%B6-%E5%BA%93/React/HOC%E7%9C%9F%E7%9A%84%E5%B0%B1%E9%82%A3%E4%B9%88%E9%AB%98%E7%BA%A7%E5%90%97.md
 
-14. react高阶组件和hooks组件有什么区别
+20. react高阶组件和hooks组件有什么区别
 
     https://juejin.cn/post/6844903993072697352#heading-6
 
-15. 说说react类组件的生命周期
+21. 说说react类组件的生命周期
 
-16. 什么情况下会触发useEffect return执行
+22. 什么情况下会触发useEffect return执行
 
-17. hooks的执行顺序是存在什么地方的
+23. hooks的执行顺序是存在什么地方的
 
     https://zh-hans.reactjs.org/docs/hooks-faq.html#how-does-react-associate-hook-calls-with-components
 
-18. constructor中super(props)的作用
+24. constructor中super(props)的作用
 
-19. react怎么做keep-alive
+25. 不在同一个父元素内的2个兄弟元素怎么通信,除了context和第3方状态库呢
+
+26. react怎么做keep-alive
 
     https://mp.weixin.qq.com/s?__biz=MzkwODIwMDY2OQ==&mid=2247488224&idx=1&sn=780a585cea8507c4922de895be16bd60&source=41#wechat_redirect
 
     https://www.npmjs.com/package/react-keepalive-router
 
-20. 常用哪些hooks,useEffect,useMemo,useCallback的区别
+27. 常用哪些hooks,useEffect,useMemo,useCallback的区别
 
-21. useEffect的第2个参数用来做什么的
+28. useEffect的第2个参数用来做什么的
 
-22. React.memo怎么用
+29. React.memo怎么用
 
-23. 类组件和函数组件的区别
+30. 类组件和函数组件的区别
 
-24. Fiber和之前的diff的区别  Fiber的中断更新用在哪些场景
+31. Fiber和之前的diff的区别  Fiber的中断更新用在哪些场景
 
     https://www.cnblogs.com/qianxiaox/p/14120253.html
 
     https://www.cnblogs.com/leslie1943/articles/13845114.html
 
-25. react的key的作用,为什么需要key,key为什么不能用index
+32. react的key的作用,为什么需要key,key为什么不能用index
 
-26. setState同步,异步
+33. setState同步,异步
 
-27. diff原理   diff具体的比较方式有哪些
+34. diff原理   diff具体的比较方式有哪些
 
     https://blog.csdn.net/qq_43958325/article/details/112315992
 
-28. react类组件的生命周期,hooks怎么实现didMount
+35. react类组件的生命周期,hooks怎么实现didMount
 
-29. useEffectLayout中可以获取到dom节点吗
+36. useEffectLayout中可以获取到dom节点吗
 
     https://www.jianshu.com/p/5a753e853a19
 
     https://blog.csdn.net/weixin_45389051/article/details/107701405
 
-30. hooks中多个setState是统一一次更新还是更新多次,有什么办法改成只更新一次
+37. hooks中多个setState是统一一次更新还是更新多次,有什么办法改成只更新一次
 
     https://blog.csdn.net/weixin_45416217/article/details/103294738
 
-31. 类组件中有什么办法可以在render前获取到dom节点
+38. 类组件中有什么办法可以在render前获取到dom节点
 
     https://blog.csdn.net/dx18520548758/article/details/103855364
 
-32. 要在页面渲染前请求接口获取数据的话,请求应该写在哪
+39. 要在页面渲染前请求接口获取数据的话,请求应该写在哪
 
-33. willMount中可以写接口请求吗  有什么缺点
+40. willMount中可以写接口请求吗  有什么缺点
 
     https://mp.weixin.qq.com/s/J0UxE5JKftkpWXcioQAmSQ异步请求可能被触发多次
 
@@ -349,37 +430,125 @@
 
     > 在React中使用componentWillMount或componentDidMount生命周期函数进行异步请求**实际上，componentDidMount由于两个原因，这是发出调用以获取数据的最佳位置：使用DidMount可以清楚地表明，只有在初始渲染之后才会加载数据。这提醒您正确设置初始状态，以免最终undefined导致出现错误的状态。如果您需要在服务器上呈现您的应用程序，componentWillMount则实际上会被调用两次-一次在服务器上，再一次在客户端上-这可能不是您想要的。放入数据加载代码 componentDidMount将确保仅从客户端获取数据。总结一下不建议在constructor和componentWillMount里写的原因是会阻碍组件的实例化，阻碍组件的渲染如果用setState，在componentWillMount里面触发setState不会重新渲染
 
-34. 说说你觉得react不好用的地方
+41. 说说你觉得react不好用的地方
 
-35. react生命周期方法16版本前后的区别,17版本增加了哪些新特性
+42. react生命周期方法16版本前后的区别,17版本增加了哪些新特性
 
     https://mp.weixin.qq.com/s/J0UxE5JKftkpWXcioQAmSQ
 
-36. hooks怎么模拟类组件的生命周期
+43. hooks怎么模拟类组件的生命周期
 
-37. 自定义hooks你们一般怎么用  有用过什么第三方自定义hooks插件么
+44. 自定义hooks你们一般怎么用  有用过什么第三方自定义hooks插件么
 
     https://zh-hans.reactjs.org/docs/hooks-custom.html
 
     https://blog.csdn.net/weixin_43154931/article/details/105668373
 
-38. 为什么会出现Hooks,相比于类组件的优点,什么场景需要用到Hooks
+45. 为什么会出现Hooks,相比于类组件的优点,什么场景需要用到Hooks
 
     https://zh-hans.reactjs.org/docs/hooks-intro.html
 
     https://mp.weixin.qq.com/s/fF-H3Lr0aP3Ld8jfJrrwQg
 
-39. 类组件和函数组件平时主要用什么
+46. 类组件和函数组件平时主要用什么
 
-40. hooks为什么不能用在条件循环语句中,有什么办法可以打破这个规则
+47. hooks为什么不能用在条件循环语句中,有什么办法可以打破这个规则
 
     https://zh-hans.reactjs.org/docs/hooks-rules.html#explanation
 
     > 不要在循环，条件或嵌套函数中调用Hook，必须始终在React函数的顶层使用Hook。这是因为React需要利用调用顺序来正确更新相应的状态，以及调用相应的钩子函数。一旦在循环或条件分支语句中调用Hook，就容易导致调用顺序的不一致性，从而产生难以预料到的后果，useRef  存储赋值，可以避免
 
-41. 怎么处理hooks中的闭包问题
+48. 怎么处理hooks中的闭包问题
 
     https://mp.weixin.qq.com/s/tl2fhCdU0efaN2j2V1VINQ
+
+49. react高阶组件对应js里哪个特性
+
+50. 实现避免重复请求hook
+
+51. 为什么react16要抛弃willMount,willReceiveProps等生命周期
+
+52. 为什么getDerivedStatefromprops是静态方法
+
+53. Hooks的原理
+
+54. 项目中有哪些可以封装成自定义hooks
+
+55. 说说react的时间调度
+
+
+
+#### TypeScript
+
+1. typescript:怎么获取一个函数的参数的类型
+
+   https://lzw.me/a/typescript-parameters-and-returntype.html
+
+2. typescript:怎么将一个type声明的类型转为可选
+
+   https://juejin.cn/post/6962441571018997791
+
+3. ts重载具体怎么写
+
+   https://www.cnblogs.com/Wayou/p/function_overload_in_typescript.html
+
+   https://www.jianshu.com/p/b11e24dec350
+
+4. A<T extends Array>是什么效果,类型约束达到的是什么效果
+
+   https://www.coder.work/article/1324002
+
+   https://segmentfault.com/a/1190000020048160
+
+   https://blog.csdn.net/weixin_43294560/article/details/107464378
+
+5. 说说类型推断
+
+6. 常用的ts特性
+
+7. typescript的extends了解么
+
+   https://juejin.cn/post/6872111128135073806#heading-95
+
+8. 用过哪些ts规则
+
+9. ts的Omit Pick的用法
+
+   https://juejin.cn/post/6905928813452984327
+
+   https://juejin.cn/post/6844903977461514254
+
+   https://blog.csdn.net/diwang_718/article/details/109331973
+
+10. Ts：怎么获取一个类型声明的所有key
+
+11. ts相比js多了哪些数据类型
+
+    https://www.136.la/jingpin/show-67608.html
+
+12. 为什么会出现ts
+
+13. 了解继承,多态,重载么
+
+    http://dditblog.com/itshare_695.html
+
+    https://www.cnblogs.com/mengxiangji/p/10399066.html
+
+14. 说说泛型,函数泛型 怎么使用的
+
+    https://juejin.cn/post/6844904184894980104
+
+15. 声明一个Interface把一个联合类型的属性都改为any类型
+
+16. 实现ts的Pick
+
+17. 怎么实现Array<T>
+
+18. interface,type,class的区别
+
+19. 说说你对泛型的了解
+
+
 
 #### 基建
 
@@ -501,6 +670,22 @@
 
 25. 主要写ui组件还是业务组件,怎么管理的
 
+26. tree shaking的原理
+
+27. ast了解么
+
+28. plugin有哪些钩子
+
+29. 组件库打包成umd,业务上怎么通过import引入你的组件呢
+
+    https://www.jqhtml.com/63324.html
+
+30. peerdependency 和devdependency的区别
+
+    https://blog.csdn.net/weixin_43459866/article/details/112392975
+
+31. 用过哪些单元测试工具
+
 #### NODEJS
 
 1. 有没有用过nodejs
@@ -521,6 +706,8 @@
 
 6. node了解多少
 
+7. node中的nexttick是做什么的
+
 #### Mobx&Redux
 
 1. reduce的用法
@@ -534,8 +721,6 @@
    https://blog.csdn.net/michellezhai/article/details/90783020
 
    https://blog.csdn.net/weixin_44369568/article/details/90713881
-
-   
 
 3. 开发过程中应该什么时候考虑性能优化,要考虑哪些方面  宏观上的考量? 提前预设? 针对某个具体页面的性能极致优化要做哪些
 
@@ -557,11 +742,15 @@
 
 9. redux怎么触发渲染
 
-10. redux和mobx的区别
+10. redux和mobx的区别,了解recoil么
 
 11. 怎么解决mobx的类数组问题
 
 12. mobx相比于state  context的优点
+
+13. 使用mobx过程中遇到什么问题,为什么要用toJS
+
+    
 
 #### 性能
 
@@ -629,6 +818,10 @@
 
      https://www.cnblogs.com/dm428/p/13910473.html
 
+14. 图片压缩有哪些办法,图片格式了解多少
+
+15. 按需打包?按需加载?怎么做?区别?
+
 
 
 #### 路由
@@ -661,7 +854,7 @@
 
 #### 网络
 
-1. 有没有用过cdn,cdn了解么  内容分发网络
+1. 有没有用过cdn,cdn了解么  内容分发网络,cdn的回源策略?
 
    https://mp.weixin.qq.com/s/8IzDE4blQ_yC6z90q55UhA
 
@@ -706,6 +899,18 @@
    https://blog.csdn.net/yexudengzhidao/article/details/92846600
    
    https://blog.csdn.net/resilient/article/details/85613446
+   
+10. memorycache和diskcache的区别
+
+11. 为什么要有协商缓存
+
+12. 协商缓存中客户端给服务端通信时,Etag是通过哪个字段传递的
+
+13. 浏览器输入一个url地址后的过程,浏览器是怎么请求,解析资源文件的
+
+14. 强缓存命中的状态码是?   200
+
+15. 常见的接口响应状态码
 
 #### GIT
 
@@ -733,70 +938,6 @@
 
 
 
-#### TypeScript
-
-1. typescript:怎么获取一个函数的参数的类型
-
-   https://lzw.me/a/typescript-parameters-and-returntype.html
-
-2. typescript:怎么将一个type声明的类型转为可选
-
-   https://juejin.cn/post/6962441571018997791
-
-3. ts重载具体怎么写
-
-   https://www.cnblogs.com/Wayou/p/function_overload_in_typescript.html
-
-   https://www.jianshu.com/p/b11e24dec350
-
-4. A<T extends Array>是什么效果,类型约束达到的是什么效果
-
-   https://www.coder.work/article/1324002
-
-   https://segmentfault.com/a/1190000020048160
-
-   https://blog.csdn.net/weixin_43294560/article/details/107464378
-
-5. 说说类型推断
-
-6. 常用的ts特性
-
-7. typescript的extends了解么
-
-   https://juejin.cn/post/6872111128135073806#heading-95
-
-8. 用过哪些ts规则
-
-9. ts的Omit Pick的用法
-
-   https://juejin.cn/post/6905928813452984327
-
-   https://juejin.cn/post/6844903977461514254
-
-   https://blog.csdn.net/diwang_718/article/details/109331973
-
-10. Ts：怎么获取一个类型声明的所有key
-
-11. ts相比js多了哪些数据类型
-
-    https://www.136.la/jingpin/show-67608.html
-
-12. 为什么会出现ts
-
-13. 了解继承,多态,重载么
-
-    http://dditblog.com/itshare_695.html
-
-    https://www.cnblogs.com/mengxiangji/p/10399066.html
-
-14. 说说泛型,函数泛型 怎么使用的
-
-    https://juejin.cn/post/6844904184894980104
-
-15. 声明一个Interface把一个联合类型的属性都改为any类型
-
-16. 实现ts的Pick
-
 
 
 #### 移动端适配
@@ -821,9 +962,13 @@
 
    https://juejin.cn/post/6844903585268891662
 
+6. 移动端适配怎么做的 字体像素颜色什么的
+
+7. ios的惯性滚动问题了解么
 
 
-#### 数据结构
+
+#### 数据结构&算法
 
 1. 取链表中间节点最优解
 
@@ -834,6 +979,10 @@
 3. 链表反转
 
    https://www.jianshu.com/p/4e8e29bda969
+   
+4. 返回字符串不重复字符长度
+
+5. 找到值最大的树节点(手写题)
 
 
 
@@ -875,8 +1024,6 @@
 
    https://www.cnblogs.com/jiasm/p/7683930.html
 
-   
-
 8. 低代码了解么
 
    https://juejin.cn/post/6961606343442726925
@@ -884,8 +1031,6 @@
    https://zhuanlan.zhihu.com/p/267844751
 
    https://zhuanlan.zhihu.com/p/196228385
-
-   
 
 9. int 8,32,64分别几个字节
 
@@ -903,115 +1048,31 @@
 
     https://mp.weixin.qq.com/s/oAlkEB4G6I5BokZQ02Pvng
 
-    
-
 13. 分组列表分组吸顶怎么实现
 
 14. 离线包版本更新同步客户端时,同步失败怎么处理
 
 15. 工作中有哪些事情是你主动去做的
 
-16. 实现promise,then,catch
-
 17. 你们组件库是怎么做的
 
-19. 为什么react16要抛弃willMount,willReceiveProps等生命周期
-
-20. 为什么getDerivedStatefromprops是静态方法
-
-21. Hooks的原理
-
-22. 项目中有哪些可以封装成自定义hooks
-
-23. 说说react的时间调度
-
 24. 了解Taro么
-
-25. 怎么处理深拷贝的循环引用问题
-
-26. 高阶组件的实现方式
 
 27. xss和csrf分别是?怎么防御?
 
 28. 遇到页面加载空白和页面中被插入了一段广告,你会怎么处理
 
-29. 常见的接口响应状态码
+20. 作用域,原型链,作用域链,作用域链和原型链的区别
 
-30. this绑定方式,区别?
+    https://www.cnblogs.com/pssp/p/5204324.html
 
-31. react18有哪些新特性
+21. 怎么过滤在线代码管理器中的xss脚本
 
-32. react17和16的区别
+22. ie上常遇到哪些问题
 
-34. 找到值最大的树节点(手写题)
+23. localstorage缓存最大能存多少,存入失败会怎么样,存的东西超出限制大小你怎么处理
 
-35. 正则匹配url中的参数(手写题)
-
-36. 怎么实现lodash的分组方法
-
-38. 作用域,原型链,作用域链,作用域链和原型链的区别
-
-39. 怎么实现axios的接口超时   用promise.race实现
-
-40. rem和em的区别
-
-41. 怎么过滤在线代码管理器中的xss脚本
-
-42. peerdependency 和devdependency的区别
-
-43. 按需打包?按需加载?怎么做?区别?
-
-41. 怎么实现promise.allsettled
-
-42. margin-top和tranform:tranlate的区别
-
-43. 绝对定位不设置top等属性是什么效果
-
-44. react中key的作用,不写会怎样
-
-45. 怎么获取Array.prototype上的方法集合
-
-46. 数组有哪些方法,怎么往数组头部插入一个元素
-
-47. node中的nexttick是做什么的
-
-48. 什么对象没有prototype属性
-
-49. 怎么实现Array<T>
-
-50. interface,type,class的区别
-
-51. 说说你对泛型的了解
-
-52. async await怎么捕获异常
-
-53. ios的惯性滚动问题了解么
-
-54. Fiber的中断更新机制具体在什么场景下有用到
-
-    https://blog.csdn.net/qq_41903941/article/details/115216864
-
-55. 不在同一个父元素内的2个兄弟元素怎么通信,除了context和第3方状态库呢
-
-56. 组件库打包成umd,业务上怎么通过import引入你的组件呢
-
-    https://www.jqhtml.com/63324.html
-
-57. memorycache和diskcache的区别
-
-58. 为什么要有协商缓存
-
-59. 浏览器输入一个url地址后的过程,浏览器是怎么请求,解析资源文件的
-
-60. 使用mobx过程中遇到什么问题,为什么要用toJS
-
-61. 强缓存命中的状态码是?
-
-62. 进程和线程的区别
-
-63. plugin有哪些钩子
-
-64. 移动端适配怎么做的 字体像素颜色什么的
+    
 
     
 
