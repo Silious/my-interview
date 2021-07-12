@@ -72,65 +72,73 @@
 
 16. 实现一个深拷贝  JSON.parse的缺点 怎么处理深拷贝的循环引用问题
 
-17. foreach和map的区别  返回值?
-
-18. 箭头函数和bind(this)的区别,哪个性能好?为什么
+17. 箭头函数和bind(this)的区别,哪个性能好?为什么
 
     https://juejin.cn/post/6844903892736557064#heading-2
 
-19. this绑定方式,区别?
+18. this绑定方式,区别?
 
-20. 数组哪些循环是可以中断的
+19. 数组哪些循环是可以中断的
 
-21. 数组去重  除了new set ,遍历还有什么其他方式
+20. 数组去重  除了new set ,遍历还有什么其他方式
 
     https://mp.weixin.qq.com/s/4cWE55z950f2_cpcrTL9eg
 
-22. new Set()转数组有哪些方式
+21. new Set()转数组有哪些方式
 
     https://blog.csdn.net/qq_41813695/article/details/84582766
 
-23. 深浅拷贝分别怎么实现   浅拷贝除了扩展运算符还有其他什么方式   JSON.parse(JSON.stringify())对函数,日期等类型的处理结果  undefined还是会忽略掉?
+22. 深浅拷贝分别怎么实现   浅拷贝除了扩展运算符还有其他什么方式   JSON.parse(JSON.stringify())对函数,日期等类型的处理结果  undefined还是会忽略掉?
 
     https://muyiy.cn/blog/4/4.1.html
 
-    忽略
+    > 1、会忽略 `undefined`
+    >
+    > 2、会忽略 `symbol`
+    >
+    > 3、不能序列化函数,会忽略
+    >
+    > 4、不能解决循环引用的对象,会报错
+    >
+    > 5、不能正确处理`new Date()`,转换结果不正确,解决方法转成字符串或者时间戳就好了
+    >
+    > 6、不能处理正则
 
-24. setTimeout 0为什么会有延迟
+23. setTimeout 0为什么会有延迟
 
     宏任务   https://www.webhek.com/post/settimeout-sleep-0-second.html
 
-25. 声明一个对象时,怎么让它的某个属性为只读 object.defineProperty
+24. 声明一个对象时,怎么让它的某个属性为只读 object.defineProperty
 
-26. const  let  var的区别
+25. const  let  var的区别
 
-27. 怎么解决js大数字精度丢失问题
+26. 怎么解决js大数字精度丢失问题
 
     https://blog.csdn.net/qq_35271556/article/details/80137474
 
-28. js大数相加怎么实现
+27. js大数相加怎么实现
 
     https://blog.csdn.net/weixin_45727472/article/details/117305306
 
     https://www.cnblogs.com/vickylinj/p/14437786.html
 
-29. 讲下事件冒泡
+28. 讲下事件冒泡
 
     https://juejin.cn/post/6844903834075021326
 
-30. 实现缓存函数memorize
+29. 实现缓存函数memorize
 
     https://segmentfault.com/a/1190000012505900
 
     https://juejin.cn/post/6844903494256705543
 
-31. 说说函数柯里化
+30. 说说函数柯里化
 
     https://juejin.cn/post/6844903603266650125
 
-32. 拷贝数组有哪些方式
+31. 拷贝数组有哪些方式
 
-33. JSON.parse JSON.stringify的缺陷
+32. JSON.parse JSON.stringify的缺陷
 
     > 1、会忽略 `undefined`
     >
@@ -144,15 +152,15 @@
     >
     > 6、不能处理正则
 
-34. 实现Promise.all
+33. 实现Promise.all
 
     https://juejin.cn/post/6844904064820461576
 
-35. Promise.all 遇到异常最后返回结果是什么
+34. Promise.all 遇到异常最后返回结果是什么
 
     https://blog.csdn.net/Elanenrich123/article/details/88410933
 
-36. Promise有几种状态
+35. Promise有几种状态
 
     > 1.初始化，状态：pending
     >
@@ -160,35 +168,35 @@
     >
     > 3.当调用reject(失败)，状态：pending=>rejected
 
-37. Map,Set了解么,怎么用
+36. Map,Set了解么,怎么用
 
     https://segmentfault.com/a/1190000022936727
 
-38. 箭头函数和普通函数的区别
+37. 箭头函数和普通函数的区别
 
-39. forEach map的区别
+38. forEach map的区别
 
     https://juejin.cn/post/6844903593816883214
 
-40. 说说Promise.all   race  allsettled  怎么实现promise.allsettled   怎么捕获异常
+39. 说说Promise.all   race  allsettled  怎么实现promise.allsettled   怎么捕获异常
 
     [Promise.allSettled 的作用，如何自己实现 Promise.allSettled](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/480)
 
     https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/130
 
-41. 实现promise,then,catch
+40. 实现promise,then,catch
 
-42. 说说aysc  await
+41. 说说aysc  await
 
-43. 怎么实现深拷贝
+42. 怎么实现深拷贝
 
-44. 说说eventLoop    宏任务和微任务的区别
+43. 说说eventLoop    宏任务和微任务的区别
 
     https://mp.weixin.qq.com/s/qhkQtRFmgfc7Mx0e1nROcw
 
-45. setTimeout和Promise的执行优先级
+44. setTimeout和Promise的执行优先级
 
-46. compose了解么
+45. compose了解么
 
     https://blog.csdn.net/zxl1990_ok/article/details/90049466
 
@@ -222,31 +230,31 @@
 
     
 
-47. 为什么js中函数是一等公民
+46. 为什么js中函数是一等公民
 
     https://www.cnblogs.com/fundebug/p/javascript-first-class-function.html
 
     https://www.cnblogs.com/xiaoxiaokun/p/7090902.html
 
-48. 数组打断顺序  去重  扁平化,  不清楚数组层级时用flat去重传什么参数
+47. 数组打断顺序  去重  扁平化,  不清楚数组层级时用flat去重传什么参数
 
-49. 说说模块化的历史 说说CMD和AMD
+48. 说说模块化的历史 说说CMD和AMD
 
     [前端模块化发展史](https://www.jianshu.com/p/6332cb0f3d7f)
 
-50. 执行多个promise,按顺序输出对应的结果
+49. 执行多个promise,按顺序输出对应的结果
 
-51. this绑定有哪些
+50. this绑定有哪些
 
     https://muyiy.cn/blog/3/3.1.html
 
-52. 实时显示日期时间并格式化
+51. 实时显示日期时间并格式化
 
-53. 有一个li列表,实现点击打印出当前点击的li序号
+52. 有一个li列表,实现点击打印出当前点击的li序号
 
-54. 深浅拷贝的特点
+53. 深浅拷贝的特点
 
-55. 项目中用到哪些设计模式   观察者模式和发布订阅模式的区别
+54. 项目中用到哪些设计模式   观察者模式和发布订阅模式的区别
 
     https://juejin.cn/post/6844904032826294286#heading-76
 
@@ -258,57 +266,57 @@
 
     https://www.jianshu.com/p/594f018b68e7
 
-56. 正则:去掉字符串的前后空格     匹配千分位
+55. 正则:去掉字符串的前后空格     匹配千分位
 
     https://tool.oschina.net/uploads/apidocs/jquery/regexp.html
 
-57. trim的作用
+56. trim的作用
 
-58. 分片上传,断点续传怎么做的
+57. 分片上传,断点续传怎么做的
 
     https://juejin.cn/post/6844903860327186445#heading-8
 
-59. class继承的原理
+58. class继承的原理
 
     https://juejin.cn/post/6875972243596247047
 
     https://www.cnblogs.com/memphis-f/p/12029574.html
 
-60. 为什么会有暂时性死区
+59. 为什么会有暂时性死区
 
-61. 实现防抖函数
+60. 实现防抖函数
 
-62. 函数预加载了解么
+61. 函数预加载了解么
 
-63. 一个函数直接return this和return一个对象的区别
+62. 一个函数直接return this和return一个对象的区别
 
-64. 怎么创建公有属性,私有属性
+63. 怎么创建公有属性,私有属性
 
-65. es5和es6的作用域有什么区别
+64. es5和es6的作用域有什么区别
 
-66. 类的构造函数的作用
+65. 类的构造函数的作用
 
-67. 怎么获取Array.prototype上的方法集合
+66. 怎么获取Array.prototype上的方法集合
 
-68. 数组有哪些方法,怎么往数组头部插入一个元素
+67. 数组有哪些方法,怎么往数组头部插入一个元素
 
-69. 什么对象没有prototype属性
+68. 什么对象没有prototype属性
 
     https://blog.csdn.net/qq_36711388/article/details/90346459
 
-70. async await怎么捕获异常
+69. async await怎么捕获异常
 
-71. 实现reduce,map
+70. 实现reduce,map
 
-72. 怎么实现axios的接口超时   用promise.race实现
+71. 怎么实现axios的接口超时   用promise.race实现
 
-73. 正则匹配url中的参数(手写题)
+72. 正则匹配url中的参数(手写题)
 
-74. 怎么实现lodash的分组方法
+73. 怎么实现lodash的分组方法
 
-75. es5,es6监听属性的方式分别是什么
+74. es5,es6监听属性的方式分别是什么
 
-76. arguments和形参的区别,形参是什么时候生成的
+75. arguments和形参的区别,形参是什么时候生成的
 
 #### CSS
 
