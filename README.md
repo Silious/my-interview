@@ -24,6 +24,10 @@
 
    https://blog.csdn.net/qq_40968685/article/details/114642909
 
+   https://cloud.tencent.com/developer/article/1519844
+
+   https://juejin.cn/post/6954977079502831629
+
 7. 数组的哪些遍历方法可中断
 
    https://blog.csdn.net/weixin_34228387/article/details/88024376
@@ -36,13 +40,21 @@
 
 9. 原型链和原型对象
 
+   https://juejin.cn/post/6844904146445811720
+
+   https://juejin.cn/post/6844903590474203150
+
 10. 闭包
 
     [说说闭包](https://github.com/LuckyWinty/fe-weekly-questions/issues/71)
 
-11. 事件冒泡  事件捕捉,哪个先  
+11. 事件冒泡  事件捕获,哪个先  
+
+    > 事件捕获
 
 12. 事件委托
+
+    [说说事件委托](https://github.com/LuckyWinty/fe-weekly-questions/issues/72)
 
 13. 代码执行过程中的内存分配
 
@@ -63,6 +75,8 @@
 17. foreach和map的区别  返回值?
 
 18. 箭头函数和bind(this)的区别,哪个性能好?为什么
+
+    https://juejin.cn/post/6844903892736557064#heading-2
 
 19. this绑定方式,区别?
 
@@ -102,11 +116,17 @@
 
 29. 讲下事件冒泡
 
+    https://juejin.cn/post/6844903834075021326
+
 30. 实现缓存函数memorize
 
     https://segmentfault.com/a/1190000012505900
 
+    https://juejin.cn/post/6844903494256705543
+
 31. 说说函数柯里化
+
+    https://juejin.cn/post/6844903603266650125
 
 32. 拷贝数组有哪些方式
 
@@ -142,13 +162,19 @@
 
 37. Map,Set了解么,怎么用
 
+    https://segmentfault.com/a/1190000022936727
+
 38. 箭头函数和普通函数的区别
 
 39. forEach map的区别
 
+    https://juejin.cn/post/6844903593816883214
+
 40. 说说Promise.all   race  allsettled  怎么实现promise.allsettled   怎么捕获异常
 
     [Promise.allSettled 的作用，如何自己实现 Promise.allSettled](https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/480)
+
+    https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/130
 
 41. 实现promise,then,catch
 
@@ -165,6 +191,36 @@
 46. compose了解么
 
     https://blog.csdn.net/zxl1990_ok/article/details/90049466
+
+    https://segmentfault.com/a/1190000008394749
+
+    ```
+    var compose = function(f,g) {
+      return function(x) {
+        return f(g(x));
+      };
+    };
+    ```
+
+    ```
+    var toUpperCase = function(x) { return x.toUpperCase(); };
+    var exclaim = function(x) { return x + '!'; };
+    var shout = compose(exclaim, toUpperCase);
+    
+    shout("send in the clowns");
+    ```
+
+    ```
+    function compose(...args) {
+      return (result) => {
+        return args.reduceRight((result, fn) => {
+          return fn(result)
+        }, result)
+      }
+    }
+    ```
+
+    
 
 47. 为什么js中函数是一等公民
 
@@ -196,6 +252,12 @@
 
     https://zhuanlan.zhihu.com/p/51357583
 
+    https://blog.csdn.net/qq_36360463/article/details/105622635
+
+    https://blog.csdn.net/hkduan/article/details/105802207
+
+    https://www.jianshu.com/p/594f018b68e7
+
 56. 正则:去掉字符串的前后空格     匹配千分位
 
     https://tool.oschina.net/uploads/apidocs/jquery/regexp.html
@@ -207,6 +269,8 @@
     https://juejin.cn/post/6844903860327186445#heading-8
 
 59. class继承的原理
+
+    https://juejin.cn/post/6875972243596247047
 
     https://www.cnblogs.com/memphis-f/p/12029574.html
 
@@ -230,9 +294,11 @@
 
 69. 什么对象没有prototype属性
 
+    https://blog.csdn.net/qq_36711388/article/details/90346459
+
 70. async await怎么捕获异常
 
-71. 实现recude,map
+71. 实现reduce,map
 
 72. 怎么实现axios的接口超时   用promise.race实现
 
@@ -323,6 +389,8 @@
 22. margin-top和tranform:tranlate的区别
 
 23. 绝对定位不设置top等属性是什么效果
+
+    https://blog.csdn.net/cherry_vicent/article/details/41778501
 
 24. transform位移和position定位位置有什么区别,性能差异表现在哪里,为什么
 
@@ -418,15 +486,25 @@
 
     https://blog.csdn.net/qq_41903941/article/details/115216864
 
+    https://www.jianshu.com/p/e97e05dbcba3
+
+    https://www.jianshu.com/p/48e06fb4a7a6
+
 14. 高阶组件的实现方式
 
 15. setState什么时候异步 什么时候同步
 
     https://kaiwu.lagou.com/course/courseInfo.htm?courseId=566#/detail/pc?id=5796
 
+    https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/17
+
+    https://segmentfault.com/a/1190000039417644
+
 16. 说下虚拟dom
 
     https://kaiwu.lagou.com/course/courseInfo.htm?courseId=566#/detail/pc?id=5799
+
+    https://juejin.cn/post/6844903870229905422
 
     https://mp.weixin.qq.com/s/oAlVmZ4Hbt2VhOwFEkNEhw
 
@@ -441,6 +519,12 @@
 18. react组件怎么减少重复渲染
 
     https://kaiwu.lagou.com/course/courseInfo.htm?courseId=566#/detail/pc?id=5804
+
+    https://segmentfault.com/a/1190000039219500
+
+    https://juejin.cn/post/6885162791632633870
+
+    https://blog.csdn.net/qq_39207948/article/details/113815277
 
 19. react自带高阶组件有哪些
 
@@ -460,7 +544,11 @@
 
 24. constructor中super(props)的作用
 
+    https://www.jianshu.com/p/b55949fa20a2
+
 25. 不在同一个父元素内的2个兄弟元素怎么通信,除了context和第3方状态库呢
+
+    https://segmentfault.com/a/1190000012361461?utm_source=tag-newest#articleHeader6
 
 26. react怎么做keep-alive
 
@@ -478,6 +566,22 @@
 
 31. Fiber和之前的diff的区别  Fiber的中断更新用在哪些场景
 
+    Fiber Reconciler 在阶段一进行 Diff 计算的时候，会生成一棵 Fiber 树。这棵树是在 Virtual DOM 树的基础上增加额外的信息来生成的，它本质来说是一个链表。
+
+    ![img](https://img2020.cnblogs.com/blog/1158910/202103/1158910-20210331185934985-1959827099.png)
+
+    ![img](https://img2020.cnblogs.com/blog/1158910/202103/1158910-20210331185945897-203506312.png)
+
+    　　Fiber 树在首次渲染的时候会一次生成。在后续需要 Diff 的时候，会根据已有树和最新 Virtual DOM 的信息，生成一棵新的树。
+
+    　　这颗新树每生成一个新的节点，都会将控制权交回给主线程，去检查有没有优先级更高的任务需要执行。如果没有，则继续构建树的过程：
+
+     ![img](https://img2020.cnblogs.com/blog/1158910/202103/1158910-20210331190023817-1478111405.png)
+
+    　　如果过程中有优先级更高的任务需要进行，则 Fiber Reconciler 会丢弃正在生成的树，在空闲的时候再重新执行一遍。
+
+    　　在构造 Fiber 树的过程中，Fiber Reconciler 会将需要更新的节点信息保存在 `Effect List `当中，在阶段二执行的时候，会批量更新相应的节点。
+
     https://www.cnblogs.com/qianxiaox/p/14120253.html
 
     https://www.cnblogs.com/leslie1943/articles/13845114.html
@@ -489,6 +593,8 @@
 34. diff原理   diff具体的比较方式有哪些
 
     https://blog.csdn.net/qq_43958325/article/details/112315992
+
+    https://www.jianshu.com/p/d9d54d27ff36
 
     [详解 React 16 的 Diff 策略](https://mp.weixin.qq.com/s/_jAW4Z3VR-uW0AEnjHgAEw)
 
@@ -578,6 +684,10 @@
 
 56. 说说react的时间调度
 
+    https://segmentfault.com/a/1190000039101758
+
+    https://github.com/funfish/blog/blob/master/30.%20react%20%E6%97%B6%E9%97%B4%E8%B0%83%E5%BA%A6.md
+
 57. useEffect依赖空数组和didMount的区别
 
     > 对于 `useEffect` 来说，执行的时机是完成所有的 DOM 变更并让浏览器渲染页面后，而 `useLayoutEffect` 和 class 组件中 `componentDidMount`, `componentDidUpdate`一致——在 React 完成 DOM 更新后马上同步调用，会阻塞页面渲染。
@@ -589,6 +699,18 @@
 60. react和vue怎么选型
 
     [React还是Vue：你该如何选择](https://blog.csdn.net/u013291076/article/details/53885604)
+
+61. React渲染和更新机制
+
+    https://blog.csdn.net/weixin_45221036/article/details/107341392
+
+62. Vue和React中diff算法的区别
+
+    https://blog.csdn.net/qq_45932447/article/details/110001564
+
+63. react-router的实现原理
+
+    https://www.huaweicloud.com/articles/12603991.html
 
 
 
@@ -607,6 +729,10 @@
    https://www.cnblogs.com/Wayou/p/function_overload_in_typescript.html
 
    https://www.jianshu.com/p/b11e24dec350
+
+   https://cloud.tencent.com/developer/article/1599888
+
+   https://blog.csdn.net/Honoi/article/details/103814859
 
 4. A<T extends Array>是什么效果,类型约束达到的是什么效果
 
@@ -700,13 +826,26 @@
 
    http://www.babyitellyou.com/details?id=6000f38e0c14081073f63056
 
-5. babel-loader的作用
+5. babel的原理和作用
+
+   https://www.qiyuandi.com/zhanzhang/zonghe/13462.html
+
+   https://www.yuque.com/robinson/jser/oaruvo?language=zh-cn
+
+   https://jishuin.proginn.com/p/763bfbd239b6
+
+   - babel的原理了解吗，babel是用来干嘛的。
+   - 说一说常见的babel库，你有使用过哪些。
+   - 写过 babel 插件吗？用来干啥的？怎么写的 babel 插件
+   - 知道怎么转化成 AST 的吗？
+
+6. babel-loader的作用
 
    https://www.jianshu.com/p/78832d23f176
 
    https://www.jiangruitao.com/webpack/babel-loader/
 
-6. 怎么提升webpack打包速度
+7. 怎么提升webpack打包速度
 
    https://juejin.cn/post/6844904071736852487
 
@@ -714,39 +853,45 @@
 
    https://zhuanlan.zhihu.com/p/145012279
 
-7. webpack优化
+8. webpack优化
 
    [Webpack性能优化你知道哪些](https://github.com/LuckyWinty/fe-weekly-questions/issues/4)
 
-8. babel的原理   jsx到ast的转化具体做了什么,ast了解么
+9. babel的原理   jsx到ast的转化具体做了什么,ast了解么
 
    [回顾 babel 6和7，来预测下 babel 8](https://juejin.cn/post/6956224866312060942)
 
    [掌握了AST，再也不怕被问babel，vue编译，Prettier等原理](https://juejin.cn/post/6844904019505184776)
 
-9. babel将less转css具体怎么做的
+   https://juejin.cn/post/6844904035271573511#heading-0
 
-10. 如果兼容ie10,babel需要怎么配置,
+10. babel将less转css具体怎么做的
 
-   https://blog.csdn.net/relax_go/article/details/107992133
+    https://blog.csdn.net/qq_28473733/article/details/95486122
 
-   https://www.cnblogs.com/chun321/p/13070553.html
+11. 如果兼容ie10,babel需要怎么配置,
 
-   https://www.cnblogs.com/niejunchan/p/10764823.html
+    https://blog.csdn.net/relax_go/article/details/107992133
 
-11. 组件库怎么兼容各浏览器
+    https://www.cnblogs.com/chun321/p/13070553.html
 
-12. babel-preset了解么
+    https://www.cnblogs.com/niejunchan/p/10764823.html
+
+12. 组件库怎么兼容各浏览器
+
+13. babel-preset了解么
 
     https://www.cnblogs.com/dapengFly/p/9876915.html
 
-13. publicPath是什么,用在什么场景
+14. publicPath是什么,用在什么场景
+
+    https://www.cnblogs.com/SamWeb/p/8353367.html
 
     https://runebook.dev/zh-CN/docs/webpack/guides/public-path
 
     https://champyin.com/2019/12/05/webpack%E4%B8%AD%E7%9A%84publicPath/
 
-14. prettier的作用和lint的区别
+15. prettier的作用和lint的区别
 
     https://juejin.cn/post/6844904065319731208
 
@@ -754,11 +899,11 @@
 
     https://segmentfault.com/a/1190000039026362
 
-15. babel-component-plugin是什么
+16. babel-component-plugin是什么
 
     https://juejin.cn/post/6844904077634060302
 
-16. babel预设和plugin的区别
+17. babel预设和plugin的区别
 
     https://github.com/LuckyWinty/fe-weekly-questions/issues/85
 
@@ -766,11 +911,11 @@
 
     https://www.jianshu.com/p/43063a413cd9
 
-17. antd-design的设计原理
+18. antd-design的设计原理
 
-18. 你们脚手架的实现方式
+19. 你们脚手架的实现方式
 
-19. 怎么实现异步加载
+20. 怎么实现异步加载
 
     https://www.jianshu.com/p/3aa3a3e27417
 
@@ -778,53 +923,57 @@
 
     https://segmentfault.com/a/1190000038180453
 
-20. 谈谈组件api设计需要考虑哪些方面,目前用的框架有哪些符合开箱即用的思想,比如webpack
+21. 谈谈组件api设计需要考虑哪些方面,目前用的框架有哪些符合开箱即用的思想,比如webpack
 
     https://www.jianshu.com/p/c8c092cf8f2f
 
-21. 怎么通过ast过滤代码中的某些指定代码
+22. 怎么通过ast过滤代码中的某些指定代码
 
     https://blog.csdn.net/weixin_39408343/article/details/95984062
 
     https://blog.csdn.net/qq_36571602/article/details/103533029
 
-22. 了解动态polyfill么
+23. 了解动态polyfill么
 
     https://blog.csdn.net/liixnhai/article/details/109279138
 
-23. 有独立搭建过脚手架么
+24. 有独立搭建过脚手架么
 
-24. style-lint了解么
+25. style-lint了解么
 
     https://juejin.cn/post/6844903640549818382
 
-25. 说说你们团队的代码规范
+26. 说说你们团队的代码规范
 
     https://www.cnblogs.com/sk-3/p/14214311.html
 
      https://blog.csdn.net/qq_26003101/article/details/102816915
 
-26. 在线代码编辑器怎么过滤不安全的代码
+27. 在线代码编辑器怎么过滤不安全的代码
 
     https://blog.csdn.net/weixin_33379878/article/details/117870038
 
-27. 主要写ui组件还是业务组件,怎么管理的
+28. 主要写ui组件还是业务组件,怎么管理的
 
-28. tree shaking的原理
+29. tree shaking的原理
 
     [tree shaking 及其工作原理](https://mp.weixin.qq.com/s/yiAbYvTlzsvUqfRzjyk9Rw)
 
     [Webpack 实现 Tree shaking 的前世今生](https://mp.weixin.qq.com/s/gSPlJ8zjKSqkOKkI7_AXIQ)
 
-29. 组件库打包成umd,业务上怎么通过import引入你的组件呢
+30. 组件库打包成umd,业务上怎么通过import引入你的组件呢
 
     https://www.jqhtml.com/63324.html
 
-30. peerdependency 和devdependency的区别
+31. peerdependency 和devdependency的区别
 
     https://blog.csdn.net/weixin_43459866/article/details/112392975
 
-31. 用过哪些单元测试工具
+32. 用过哪些单元测试工具
+
+33. webpack路由懒加载的原理
+
+    https://juejin.cn/post/6844904180285456398
 
 #### NODEJS
 
@@ -974,6 +1123,10 @@
 
     [Webpack性能优化你知道哪些](https://github.com/LuckyWinty/fe-weekly-questions/issues/4)
 
+    https://blog.csdn.net/qq_45432996/article/details/109599556
+
+    https://github.com/eyasliu/blog/issues/8
+
 
 
 #### 路由
@@ -1014,6 +1167,8 @@
 
    https://mp.weixin.qq.com/s/G5FIrWOtsNROHgEKesJcdg
 
+   https://blog.csdn.net/zouzixuan/article/details/84677548
+
 3. 通过什么禁用html缓存,怎么配置
 
    https://www.cnblogs.com/waisonlong/p/5199908.html
@@ -1026,31 +1181,54 @@
    >
    > 3.后端获取前端声明的执行函数（jsonpCallback），并以带上参数并调用执行函数的方式传递给前端。
 
+   > JSONP的优缺点    
+   >
+   > - 1.优点        
+   >   - 1.1它不像XMLHttpRequest对象实现的Ajax请求那样受到同源策略的限制，JSONP可以跨越同源策略；        
+   >   - 1.2它的兼容性更好，在更加古老的浏览器中都可以运行，不需要XMLHttpRequest或ActiveX的支持        
+   >   - 1.3在请求完毕后可以通过调用callback的方式回传结果。将回调方法的权限给了调用方。这个就相当于将controller层和view层终于分开了。我提供的jsonp服务只提供纯服务的数据，至于提供服务以 后的页面渲染和后续view操作都由调用者来自己定义就好了。如果有两个页面需要渲染同一份数据，你们只需要有不同的渲染逻辑就可以了，逻辑都可以使用同 一个jsonp服务。    
+   > - 2.缺点       
+   >   - 2.1它只支持GET请求而不支持POST等其它类型的HTTP请求        
+   >   - 2.2它只支持跨域HTTP请求这种情况，不能解决不同域的两个页面之间如何进行JavaScript调用的问题。        
+   >   - 2.3 jsonp在调用失败的时候不会返回各种HTTP状态码。        
+   >   - 2.4缺点是安全性。万一假如提供jsonp的服务存在页面注入漏洞，即它返回的javascript的内容被人控制的。那么结果是什么？所有调用这个 jsonp的网站都会存在漏洞。于是无法把危险控制在一个域名下…所以在使用jsonp的时候必须要保证使用的jsonp服务必须是安全可信的。
+
    https://juejin.cn/post/6844904126246027278
 
-5. 为什么要封装请求库
+5. get/post的区别
+
+   [GET和POST的区别](https://github.com/LuckyWinty/fe-weekly-questions/issues/67)
+
+6. 为什么要封装请求库
 
    https://blog.csdn.net/weixin_44348028/article/details/108504471
 
    https://zhuanlan.zhihu.com/p/87985178
 
-6. http2相比http1有哪些优点
+7. http2相比http1有哪些优点
+
+   > **http2的优化点**
+   >
+   > 1. 头部压缩： 采用HPACK算法，在客户端和服务端两端建立“字典”，用索引号表示重复的字符串， 还采用哈夫曼编码来压缩整数和字符串，可以到达50%-90%的高压缩率。
+   > 2. 多路复用： 采用二进制分帧传输，不存在先后关系， 因此也就不会有等待排队，也就没有了HTTP 的对头阻塞问题。 通信双方都可以给对分发送二进制帧， 这种二进制帧的双向传输的序列，也叫做流。 HTTP/2用流来在一个TCP连接上来进行数据帧的通信， 这就是多路复用的概念。
+   > 3. 设置请求优先级： 在二进制帧当中还有其它的一些字段， 实现了优先级和流量控制等功能
+   > 4. 服务器推送 服务器不再是完全被动地响应请求，也可以新建“流”主动向客户端发送消息。
 
    https://mp.weixin.qq.com/s/GICbiyJpINrHZ41u_4zT-A?
 
-7. https的原理  相比http有哪些优点,缺点
+8. https的原理  相比http有哪些优点,缺点
 
    https://mp.weixin.qq.com/s/CU9mOxVixaOann9Hu5MlXQ
 
    https://www.cnblogs.com/miniSimple/p/12296846.html
 
-8. 使用什么请求库  fetch和axios的区别  为什么会从fetch转成用axios  axios拦截器怎么使用,拦截器的response分别什么情况下成功回调,什么情况下走失败回调
+9. 使用什么请求库  fetch和axios的区别  为什么会从fetch转成用axios  axios拦截器怎么使用,拦截器的response分别什么情况下成功回调,什么情况下走失败回调
 
    https://www.jianshu.com/p/8bc48f8fde75
 
    https://www.cnblogs.com/xbzhu/p/11810384.html
 
-9. websocket用过么
+10. websocket用过么
 
    https://mp.weixin.qq.com/s/OKiVeiAtdZvSG5ZC8jYOzg
 
@@ -1058,23 +1236,29 @@
 
    https://blog.csdn.net/resilient/article/details/85613446
 
-10. memorycache和diskcache的区别
+11. memorycache和diskcache的区别
 
-11. 为什么要有协商缓存
+12. 为什么要有协商缓存
 
-12. 协商缓存中客户端给服务端通信时,Etag是通过哪个字段传递的
+13. 协商缓存中客户端给服务端通信时,Etag是通过哪个字段传递的
 
-13. 浏览器输入一个url地址后的过程,浏览器是怎么请求,解析资源文件的
+14. 浏览器输入一个url地址后的过程,浏览器是怎么请求,解析资源文件的
 
     [浏览器输入URL后发生了什么](https://github.com/LuckyWinty/fe-weekly-questions/issues/37)
 
-14. 强缓存命中的状态码是?   200
+15. 强缓存命中的状态码是?   200
 
-15. 常见的接口响应状态码
+16. 常见的接口响应状态码
 
-16. 一次http请求过程是怎样的
+17. 一次http请求过程是怎样的
 
-17. ajax请求过程,原理
+18. ajax请求过程,原理
+
+19. TCP 连接上面能发多少个 HTTP 请求
+
+    https://zhuanlan.zhihu.com/p/61423830
+
+    https://cloud.tencent.com/developer/article/1518678
 
 #### GIT
 
@@ -1187,7 +1371,7 @@ console.log(group);
 
 3. 前端请求接口容错?
 
-   谁来补充
+   https://juejin.cn/post/6955610207036801031
 
 4. 接到一个新的需求,你需要做哪些事情? 沟通需求,原型,UI,约定接口规范,开发?具体怎么约定接口规范,要考虑哪些
 
@@ -1247,21 +1431,27 @@ console.log(group);
 
 27. xss和csrf分别是?怎么防御?
 
-28. 遇到页面加载空白和页面中被插入了一段广告,你会怎么处理
+18. web安全了解多少
 
-19. 作用域,原型链,作用域链,作用域链和原型链的区别
+    [谈谈web安全问题及解决方案](https://github.com/LuckyWinty/fe-weekly-questions/issues/1)
+
+19. 遇到页面加载空白和页面中被插入了一段广告,你会怎么处理
+
+20. 作用域,原型链,作用域链,作用域链和原型链的区别
 
     https://www.cnblogs.com/pssp/p/5204324.html
 
-20. 怎么过滤在线代码管理器中的xss脚本
+21. 怎么过滤在线代码管理器中的xss脚本
 
-21. ie上常遇到哪些问题
+22. ie上常遇到哪些问题
 
-22. localstorage缓存最大能存多少,存入失败会怎么样,存的东西超出限制大小你怎么处理
+23. localstorage缓存最大能存多少,存入失败会怎么样,存的东西超出限制大小你怎么处理
 
-23. 服务端是怎么主动给客户端发消息的?通过什么方式?
+24. 服务端是怎么主动给客户端发消息的?通过什么方式?
 
-24. 
+25. Json和JSONP的区别
+
+26. 
 
     
 
